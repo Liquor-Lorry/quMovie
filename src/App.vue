@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <tabbar/>
-    <router-view/>
+    <section>
+      <router-view/>
+    </section>
   </div>
 </template>
 
@@ -30,7 +32,14 @@ export default {
   margin: 0;
   padding: 0;
 }
+html, body {
+  height: 100%;
+}
 li {
   list-style: none;
+}
+
+section {
+  margin-bottom: 50px;
 }
 </style>

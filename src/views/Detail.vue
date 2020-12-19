@@ -12,7 +12,7 @@ export default {
     }
   },
   mounted () {
-    console.log('利用获取到的id，请求ajax接口', this.$route.params.id)
+    // console.log('利用获取到的id，请求ajax接口', this.$route.params.id)
   }
 }
 </script>

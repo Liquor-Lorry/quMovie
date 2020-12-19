@@ -18,13 +18,18 @@ export default {
 </script>
 
 <style scoped lang="scss">
-ul {
-  display: flex;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  li {
-    flex: 1;
+.film-nav {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  ul {
+    display: flex;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    li {
+      flex: 1;
+    }
   }
 }
 
