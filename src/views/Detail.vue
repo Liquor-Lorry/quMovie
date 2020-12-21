@@ -36,6 +36,7 @@
           </div>
         </detail-swiper>
       </div>
+
       <div class="film-photo">
         <div class="photo-name">
           <span>剧照</span>
@@ -53,6 +54,8 @@
           </div>
         </detail-swiper>
       </div>
+
+      <div class="goTicket">选座购票</div>
     </div>
   </v-touch>
 </template>
@@ -199,6 +202,19 @@ export default {
         color: #797d82;
       }
     }
+  }
+  .goTicket {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 49px;
+    width: 100%;
+    text-align: center;
+    background-color: #ff5f16;
+    color: #fff;
+    font-size: 16px;
+    line-height: 49px;
+    z-index: 99;
   }
 }
 

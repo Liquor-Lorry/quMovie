@@ -97,6 +97,7 @@ export default {
     margin-right: 10px;
   }
   p {
+    color: #797d82;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;

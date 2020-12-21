@@ -66,18 +66,18 @@ const router = new VueRouter({
 })
 
 // 全局路由守卫
-router.beforeEach((to, from, next) => {
-  // console.log(to);
-  const auth = ['/center', '/order', '/money', '/card']
+// router.beforeEach((to, from, next) => {
+//   // console.log(to);
+//   const auth = ['/center', '/order', '/money', '/card']
 
-  if (auth.includes(to.fullPath)) {
-    // console.log('验证token');
-    if (!localStorage.getItem('mytoken')) {
-      next('/login')
-    }
-  } else {
-    next()
-  }
-})
+//   if (auth.includes(to.fullPath)) {
+//     // console.log('验证token');
+//     if (!localStorage.getItem('mytoken')) {
+//       next('/login')
+//     }
+//   } else {
+//     next()
+//   }
+// })
 
 export default router
