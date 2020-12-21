@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <tabbar/>
+    <tabbar v-show="isTabbarShow"></tabbar>
     <section>
       <router-view/>
     </section>
@@ -9,7 +9,8 @@
 
 <script>
 import tabbar from './components/Tabbar.vue'
-import axios from 'axios'// https://m.maoyan.com/ajax/movieOnInfoList
+
+import { mapState } from 'vuex'
 export default {
   components: {
     tabbar
@@ -19,10 +20,11 @@ export default {
 
     }
   },
-  created () {
-    axios.get('/ajax/movieOnInfoList').then(res => {
-      console.log(res.data)
-    })
+  computed: {
+    ...mapState('TabbarModule', ['isTabbarShow'])
+  },
+  mounted () {
+    // console.log(mapState("TabbarModule", ["isTabbarShow"]));
   }
 }
 </script>
@@ -41,5 +43,9 @@ li {
 
 section {
   margin-bottom: 50px;
+}
+
+* {
+  touch-action: manipulation;
 }
 </style>

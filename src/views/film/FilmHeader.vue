@@ -22,6 +22,7 @@ export default {
   position: sticky;
   top: 0;
   background-color: #fff;
+  z-index: 10;
   ul {
     display: flex;
     height: 40px;
